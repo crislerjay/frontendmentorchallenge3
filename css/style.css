@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-01: hsl(193, 38%, 86%);
+  --primary-02: hsl(150, 100%, 66%);
+  --neutral-01: hsl(217, 19%, 38%);
+  --neutral-02: hsl(217, 19%, 24%);
+  --neutral-03: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+}
+
+.wrap {
+  background: var(--neutral-03);
+  min-height: 100vh;
+  padding-top: 223px;
+}
+
+.adviceBlk {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+  background: var(--neutral-02);
+  border-radius: 15px;
+  text-align: center;
+  padding: 50px 45px;
+  margin-bottom: 80px;
+}
+.adviceID {
+  color: var(--primary-02);
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  margin-bottom: 27px;
+}
+.adviceTxt {
+  color: var(--primary-01);
+  line-height: 1.4;
+  padding-bottom: 30px;
+}
+.adviceTxt::after {
+  content: '';
+  background: url('/images/pattern-divider-desktop.svg') no-repeat;
+  height: 16px;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.btnRoll {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  background: var(--primary-02);
+  border-radius: 50%;
+  width: 64px;
+  padding: 18px 0;
+}
+.btnRoll:hover {
+  opacity: .8;
+}
